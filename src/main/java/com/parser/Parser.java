@@ -8,32 +8,9 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Parser {
-    static class Level {
-        String map;
-        String solution;
-        int solutionLength;
-        int uppercaseCount;
-        String time;
-
-        Level(String map, String time, String solution) {
-            this.map = map;
-            this.solution = solution;
-            this.solutionLength = solution.length();
-            this.uppercaseCount = countUppercaseLetters(solution);
-            this.time = time;
-        }
-
-        private int countUppercaseLetters(String solution) {
-            int count = 0;
-            for (char c : solution.toCharArray()) {
-                if (Character.isUpperCase(c)) {
-                    count++;
-                }
-            }
-            return count;
-        }
-    }
-
+    
+    List<Level> levels = new ArrayList<>();
+    
     public static void main(String[] args) {
         String inputFilePath = "solutions2.sok"; // Ruta del archivo de entrada
         String outputFilePath = "results.xlsx"; // Ruta del archivo de salida
@@ -43,6 +20,29 @@ public class Parser {
         try {
             exportToExcel(levels, outputFilePath);
             System.out.println("Archivo Excel generado correctamente en: " + outputFilePath);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        //Export boards to txt
+        exportBoardsToFile(levels, "newFessBoards.txt");
+    }
+    
+    public static void exportBoardsToFile(List<Level> levels, String outputFilePath) {
+        try (PrintWriter writer = new PrintWriter(new FileWriter(outputFilePath))) {
+            int cont = 0;
+            int aux = 1;
+            while(cont < levels.size()){
+                Level level = levels.get(cont);
+                cont++;
+                if (!level.solution.isEmpty()) continue;
+                
+                writer.print("ID: " + aux + "\n"); // Assuming ID starts from 1
+                writer.print(level.map);
+                writer.println("\n"); // Assuming ID starts from 1
+                aux++;
+            }
+            System.out.println("Boards exported to " + outputFilePath + " successfully.");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -82,8 +82,7 @@ public class Parser {
                     System.out.println("");
                 }
                     
-                    
-                    
+
                 } else {
                     map = removeFirstTwoLines(part);
                 }
@@ -121,8 +120,6 @@ public class Parser {
                 cell.setCellValue(level.map);
 
                 cell = row.createCell(1);
-                if(level.solution.length() >=32767 )
-                    level.solution = "a";
                 cell.setCellValue(level.solution);
 
                 cell = row.createCell(2);
@@ -149,7 +146,8 @@ public class Parser {
             if (level.solution.isEmpty()) {
                 Row row = sheet2.createRow(rowNumSheet2++);
                 Cell cell = row.createCell(0);
-                cell.setCellValue(removeLastFourLines(level.map));
+                level.map = removeLastFourLines(level.map);
+                cell.setCellValue(level.map);
             }
         }
 
