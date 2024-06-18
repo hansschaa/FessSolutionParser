@@ -1,185 +1,63 @@
-Festival 3.1 solution file
-===========================
-Collection: sok/Holland.sok
+Level 1
 
-Bagatelle is a French word for a trinket, from the Italian for a conjuror's trick. The collection contains fairly simple puzzles (of less difficulty than my previous collection maelstrom) of various sizes. Some of the small puzzles are easier versions of puzzles in my other collections. Others are my take on some classical Sokoban themes (goals in a line, in a cross shape, objects outside goal room for tricky start and finish). The problems posed by each puzzle are of a fairly straightforward kind, but are nevertheless quite varied. The puzzles are in roughly ascending order of difficulty.
-
-     ####   
-   ###  ####
- ### $ $   #
- #   #..#$ #
- # $$#*.#  #
- #   ....$ #
-## # .#.#  #
-# $##$#.#$ #
-# @$    .$ #
-##  #  ##  #
- ###########
+  ##############
+  #   #        #
+  # $ $ $ $ #$ #
+  # #$# ###  $ #
+  # # .....##$##
+  #  ...+..  $ #
+####$# ....# # #
+#    #### # $$ #
+# $#    $$ $ # #
+# $ ..#        #
+################
 
 Solution
-UdRRRUUluRRRdddLdlUUUluRllluurrDullddrRdrddllluUUrrdrddrruuuuuluurDDDDDuuuurrrddddddLLLLLLLdlUUdrrruuluuuuRRurDDDDuuurrrddlUruLLrrddddddllllluuluuuurrurDDDuurrrddddlUUUruLLrrddddddllllluuluuuurrurDDurrrddddddlUUUUUruLLrddddddlllluuluuuurrurDllldddllDDldRRRRRRRllluuluuuurrrrrrdddddddlUUUUUUruLLLulDlldllDDDDldRRRRuuluuuurrrrrddddddllLdlUUdllluuurruLulDDDDldRRRRRR
-
-Solver: Festival 3.1
-Solver time: 00:10:01
-Solver date: 2024-06-14  10:44:59
-
-
-Author's note:
-
-   #####
-####   #
-#@$  # #
-# $$$  #
-##.#.  #
-#  ..# #
-#  #.* #
-# $.$ ##
-###   # 
-  ##### 
-
-Solution
-RDDDrruUddlluuRRdrruuullDDuLdlddrrUUdrrddLddlluRdrUlUUlluurrDDurruuullDDDrruLruulldDllddlddRUluRuuluRRdrrruullDurrddlLLulD
-
-Solver: Festival 3.1
-Solver time: 00:00:01
-Solver date: 2024-06-14  10:45:00
-
-
-Author's note:
-
-   #####   
-  ##  @####
-  #  #$$  #
-###.#   # #
-#  $#.#$  #
-#   ...  ##
-###$#.#$ # 
-  #     ## 
-  ###   #  
-    #####  
-
-Solution
-DRdDrdLLLLLUdrrddrrUdlluurRlluuRurDDDDullllulldRRRRddllUdrruulLrruurrddLruulldDDullddrRuuuuruulldlDDDrrrrurruuLLddddrUluuurrddLruulldDrdLuullddlluuururrDulldldddrruuRlddddllUUUdrruururrrddlldLLddlluuRlddrruUrrruruullDDrdLLLddlluuRlulldRRddrrdrrUUruLddLdlU
+rrrrdDuullllllllDDlllddRRRllUluRddrrUUdrrrdrrrrrrruuuuLLLLLdlUllllluuuurrdDDrruuurrdLulDDDlddrruLulluuRRdddrrrrrrrddddlllllUUUUdddrdrrUUUdddrruuuulLLLLdlluuuuurrrrrrrddLDuruullllllldddddrrddrdrrrruuuuLLLrddddlluluurUldlllUruuullddRluurrdDDldRRRlluuuuurrdLulDDDDldRRluuuurrurrrrrddlddllllDlluuuullullddddrRurrddlUruLdlUrrddrrurrrddddlllllullluUddrrrdrrrrruuuullldlluuuullullddddRRurrddlUlldddrrrdrrruRuruulllLdlUUUddlllluuuurrdrRurrrrrrDDDuuullllllddddrrrrrddlddrrruuuuLLLLLLrrrrruuuulllllldddDldRuuuuurrrrddRluullllddddrrrrrruUddlllllllllddLrdrrrdrruUUddrruruullLLLuuullDDuurrurrdLulDDDDuuullulldRRRRurrdLulDDDuurrurrdLLLulDDulllldddrdddrrrRdrUUdrruruuruuruulDDDullulllllllldddrdddrrrrrrrdrrruuuuLLLLLrrrddldllllllldlluluRRlddrrurrrrrrruruuruullulllllllldddrdDDrrrrrrrdrUUUdddrruuuulLLLrrrrddLrddlluUUdrruulLL
 
 Solver: Festival 3.1
 Solver time: 00:00:00
-Solver date: 2024-06-14  10:45:00
+Solver date: 2024-06-16  02:48:35
 
 
-Author's note:
+Level 2
 
-   ####  #####    
-####  ####   #    
-# $  $     $ #### 
-# #   # ### #   # 
-#  $   $ # $$ $ # 
-###  ## $@$     ##
-  #$ ##  # $$ $$ #
-  #    $  ## ##  #
- ### #$##  ...# ##
- #  ..*.*..##.# # 
- # #..*.....*.# # 
- #   ########   # 
- #####      ##### 
+  ##############
+  #   #        #
+  # $ $ $ $ #$ #
+  # # . ###  $ #
+  # # .....##$##
+  # *.*+#**  $ #
+####.# ....# # #
+#    #### # $$ #
+# $#    $$ $ $ #
+#   ..#        #
+################
+
+Solver: Festival 3.1
+Solver time: 00:00:07
+Solver date: 2024-06-16  02:48:42
+
+
+Level 3
+
+   ########   
+   #      #   
+   # $$#  ####
+#### #  $    #
+#   $#..##$$ #
+#  # .+..  # #
+# #  .... #  #
+# $$##..#$   #
+#    $  # ####
+####  # $ #   
+   #   #$ #   
+   #      #   
+   ########   
 
 Solution
-RRRRllllLuLLLulDDDDDDllddrrUruLuuuulUrrrruurrrurrdLLLLLddrdrrrUUdldlluluurrrurrdLLLrrddldllullluluurDlddrrrrdddrdrrrrddLLrruullllddlluLLdlUUUUUluRRldddddrrrdrruuuluuuluuLrddrdddrdrrruUruLLLrrdddrdddrruuuuUUddddddlluuullllddllLrrrururrrddllLLLLrrrrrrdrruuuuuLLulDDurrrdddddlluuuLuuulldRurrdrrdddddlluuuluUruLruurrDDDlllddrdddrruuuUruLLLulDDulluurRdrdrrdddddllullluululuuuluuRRRurDDullllddrdddrdrddrrrdrruuuuullllluuRuullllddrdddrdddlluRRurDldRRRlluululuuuluurrrrddlddrrrrrdddddllUUdlllulllllluurrDullddrRRRRurDldRRRlluululuuuluurrrrddlddrrrrrdddddllUlllullllllddlluuRRRRRRRurDldRRRlluululuuuluulLulDDDDDDDDllddrrUdlluurRRRRRRurDldRRlulllluulluuullluuRRRRRRRRRurrdLLLLLLLulDDDDDDDDllddrrUdlluurRRRRRRurDldRuululLLLrrruuuluulllddddDDDllddrrUdlluurRRRRRdrruulDrdLLruuuluuuluurrrrddldLruruullllddrDDldlddrrruuLLLLrrruuuluulllddddDDDllddrrUdlluurRRRRRdrruulDrdLuuuluurrdrUUUdldlluluurrrurrdLLLLLLLulDDDDDDDDllddrrUdlluurRRRRRRurDululuurrrrrdrruLLLdlUUUdldlluluurrrurrdLLLLLLLulDDDDDDDDllddrrUdlluurRRRRRlluurrrdDuuluurrrrrrruullDurrddlLLdlUUUdldlluluurrrurrdLLLLLLLulDDDDDDDDllddrrUdlluurRRRRRRuuluurrrrruLdlUUdldlluluurrrurrdLLLLLLLulDDDDDDDDllddrrUdlluurRRRRRlluurruurrrrrrruLLLdlUUdldlluluurrrurrdLLLLLLLulDDDDDDDDllddrrUdlluurRRRRluulluuuuulDullddrRurDDDDDDllddrrUdlluurRRRuulluuurUlddddrrrruuuluulLulDDDDDDDDllddrrUdlluurRRluurrrruuulLLulDDDDDDllddrrUdlluurRuurrruUruLLLulDDDDDDuulUUruuulllddrRurDDDDD
+rrrdDDDuurrruuuullluulllDDDDDuuuuurrrddLLruulldDDrddlluRdrUrrrUdlddrrruuuulLLLLruulldDDDldRRulllUlllddddrrrdrdrdrrrUUUUUdrrruuuullddLLLrrruulllldDrddddRluuuulllulllddddrrrdrdrdrrruUUUUdrrruuuullddLLLLuuuulldRurDDDurrrrddlddddddlllululuRRlddrdrrruullUUUddlllllluuururrddlDuruulllddddrRRRRlddrdrrruullUUddrruuuuruullllullDDDulllddddrruuRuuuurrdrrrrrrdLrddldlluurUruLLLLruulldDullddllldddRluururrddlDldRRRRlddrdrrruullUdrrddlUdlluluurrdRdrUUUUdrrruuulldL
 
 Solver: Festival 3.1
 Solver time: 00:00:01
-Solver date: 2024-06-14  10:45:01
-
-
-Author's note:
-
-  ####           
-  #  #           
-  #  # #######   
-  #  # #..   #   
-  # ####..##$### 
-  #  $ $.*     # 
-  # #$ #*.# $# # 
-###$#  #..#  # # 
-#   #$ #*.# $# # 
-# # #  $..#  # ##
-# #$#$ #..$  #  #
-#   #  #..#   # #
-# #@# $#*.#$# # #
-#  $#  #..#   # #
-##   $ $ $ ###  #
- ####   #      ##
-    ############ 
-
-Solution
-ulluuurrUUUUUdddddlldddddrdrrRuuuruuRRdrUUUlUUUdddrdddRRlluuuluuRlddrddlddDruurruuuuurrrdddddrddddldlllllUUUUdddrdrrrruruuuuluuuuullldddddlLulDDruuuuluurDDDDlddrdddrdrrrruruuuuluuuuullldddddlLulDulluuuuRRurDDDDDDulllddldddllluluuuuurruuurRRRlddddrrruuulUrddddlUUddlllDruuuuullldddlldddddrdrrrurUUUluRRluuuurrrdddddlUUdlldddldddrUUUUUluRRluuuurrrdddddlUrdrruuuuurrrdddddrddddldllllullLdlUUUUUluRRRlluuuurrrdddDllldddddrrrrdrrrruruuuuluuuuullldddddlLullldddlddllluluurrdDldRRRRRRlluuuuurrrdrruuuuurrrdddddrddddldlllllUUdllluuuuurrrdrruuuuuLLLruurrrDulllddddddllldddddrrrrdrrrruruuuuluuuuulLLLrdddddlluuuuUUdddddllluuuulllddddDDDDldRRRdrUUUUUluRRRlldddddrrrrdrrrruruuuuluuuuullldddddllUUUUUddddlllldDDDruuuuuuuullldddddddddrRRRRlluuuuurrruuuurrrrrdddddrddddldlllllUllluuuuuuulDDDDDDruuuuuuuullldddddddddrRdrUUUUUluRRRlldddddrrrrdrrrruruuuuluuuuullldddddllUUUddllluuuulDDDDDDDDuuuuuuuulldddddddddrRdrUUUUUluRRRlldddddrrrrdrrrruruuuuluuuuullldddddllUUdllluuuullluuruulDDDDDDDDDDDDldRRRdrUUUUUluRRRlldddddrrrrdrrrruruuuuluuuuullldddddllUdrruuuuulllLLLLrdddddddddlluuuuuuuuUUUddrrrrrrrrddrUlullllldddddddddrrrrdrrrruruuuuluuuuulLLLLLLLLrrrrrrddddddrrddllUUUUUUUruLLLrrddddrUUUlddddllullldddddrrrrdrrrruruuuuluuuuulLLLrdddddllulllldddddlluuuuuuuuuuuruulDDDDDDDDDDDDldRRRdrUUUUUluRRRlluuuulLrdddddddddlluuuuuuuuUUUruulDDDDDDDDDDDDldRRRdrUUUUUluRRldddddrrrrdrrrruruuuuluuuuullddddDldddrruuLrddlluUruLL
-
-Solver: Festival 3.1
-Solver time: 00:00:01
-Solver date: 2024-06-14  10:45:02
-
-
-Author's note:
-
-##########     
-#   ##   ######
-# $   $ $ #   #
-# $ #  .$ #   #
-###  ##.#  $ ##
-####$##.###. # 
-#   *.......$# 
-#    ##.##   # 
-##$####.###### 
-#  $ # . #   # 
-#  #  **$    # 
-#  $ # @ # $ # 
-# $   #####  # 
-###   #   #### 
-  #####        
-
-Solution
-UUUUUUUddllLLdlDDDlddRluuruuurrurrrddddRRRlluluuurrrruUlluuLrddrrddlllllllldlddldddrUdRdrruLLruurRuruuurrrruulluulullDurrdrddrrddlllllllldlddlddrRlluuruurrurrrdddldllDlddrruLuurruruuurrrruulluululldlllddrDuluurrrurrdrddrrddlllldddldlldllluuruuruRRRRRRRlllllluuluurrrurrdrddrrruulDDlluululldlllddrddrrrrrrdrrUUUllluulLLLrrDDDDllluuluuRRRurDllllddrddldlddlddrrrurruruUddldlldllluuruurruuuluurrrrrrddrrrdddllullLLLrrdddldlldllluuruurrUrrrrrrdrruuullluullDDDuuurrddrrrdddllullLLruuuulldRurrrddrrrdddllullluuUluurrdLddddrrrRdrUUdllllluuuurrddrrDrdLuulluulldddddddldlldllluuruurruRRRRllllldlluRRRRRRdddldlldllUUUUddddrruuLrdrruruuulllldldDuurrurrruuullullddrDuluurrdrrddddddldllulluuruRRRlluuluurrdrrddDDuuuulluRurDDDDDuuuullllulldRRRRlllldRurrrdrrdddllluulUdrddrrruuullulLrrRurDDDuurrdLulDrrdrruurrdLulDDDrUluurrdLulDDlluullllllddrddldlluRRRRRlluululluRRRRRurDllllddrddlldddlddrUUUUluRRRRllldddrrdrrdrUllldddlUruuullddRdrUllldRurrddlUruLdlUUUUUluRRRlldddrrDDlddrruLdlUruLdlUUUUUluRRldddrrdrrrrrrurrdLLLLLrrrrrddlUruLLLL
-
-Solver: Festival 3.1
-Solver time: 00:00:25
-Solver date: 2024-06-14  10:45:27
-
-
-Author's note:
-
-  #####  
-###   #  
-# $*@.###
-# # *$  #
-# #. .# #
-# #$* $ #
-#    .###
-###   #  
-  #####  
-
-Solution
-DldDRUrUdldddlUruurDuurrddLLullDuuRRluulDrdrddrruuLLdlldRRlddlUlluuuuRRurrDDrrddLLrruullDlDRuuuulldllddddrrdrUllluuuurrurrdddllDurruuulldllddddrRuurruuLLrrddllUdrruulDlddddrrUUUUrrddLruullllddddrruUUdddlluuuurRllddRluurrdDlluRuuulDDrddldlluuuuRlddddrrurrrruuLLrrddllllddrU
-
-Solver: Festival 3.1
-Solver time: 00:00:01
-Solver date: 2024-06-14  10:45:28
-
-
-Author's note:
-
-      #####   
-#######   ### 
-#   ## $ $  # 
-# # ##    # # 
-# #..$ $ ## # 
-#  .$# $#   # 
-###..# $ @$ # 
-  #**# $ # ## 
-  #..#   # #  
-  #..##### ## 
-  #.*#   $  # 
-  #..# $    # 
-  ##.### #####
-  # $      $ #
-  #   ####   #
-  #####  #####
-
+Solver date: 2024-06-16  02:48:43
