@@ -35,7 +35,7 @@ public class Parser {
             while(cont < levels.size()){
                 Level level = levels.get(cont);
                 cont++;
-                if (!level.solution.isEmpty()) continue;
+                if (level.solution.isEmpty()) continue;
                 
                 writer.print("ID: " + aux + "\n"); // Assuming ID starts from 1
                 writer.print(level.map);
