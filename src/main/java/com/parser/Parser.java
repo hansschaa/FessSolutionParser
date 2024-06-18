@@ -13,12 +13,14 @@ public class Parser {
         String solution;
         int solutionLength;
         int uppercaseCount;
+        String time;
 
-        Level(String map, String solution) {
+        Level(String map, String time, String solution) {
             this.map = map;
             this.solution = solution;
             this.solutionLength = solution.length();
             this.uppercaseCount = countUppercaseLetters(solution);
+            this.time = time;
         }
 
         private int countUppercaseLetters(String solution) {
@@ -65,16 +67,30 @@ public class Parser {
                 String part = parts[i];
                 int solutionIndex = part.indexOf("Solution");
                 String map;
+                String time = "";
                 String solution = "";
 
                 if (solutionIndex != -1) {
                     map = removeFirstTwoLines(part.substring(0, solutionIndex));
                     solution = part.substring(solutionIndex + "Solution".length()).trim();
+                    
+                    
+                if (part.contains("Solution")) {
+                    if (part.contains("Solver time:")) {
+                        time = part.substring(part.indexOf("Solver time:") + 12, part.indexOf("Solver date:")).trim();
+                    }
+                    System.out.println("");
+                }
+                    
+                    
+                    
                 } else {
                     map = removeFirstTwoLines(part);
                 }
+                
+                
 
-                levels.add(new Level(map, solution));
+                levels.add(new Level(map, time, solution));
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -94,6 +110,7 @@ public class Parser {
         headerRow1.createCell(1).setCellValue("Solución");
         headerRow1.createCell(2).setCellValue("Longitud de la Solución");
         headerRow1.createCell(3).setCellValue("Cantidad de Mayúsculas");
+        headerRow1.createCell(3).setCellValue("Tiempo");
 
         int rowNumSheet1 = 1; // Empezar en la segunda fila después del encabezado
 
@@ -113,6 +130,9 @@ public class Parser {
 
                 cell = row.createCell(3);
                 cell.setCellValue(level.uppercaseCount);
+                
+                cell = row.createCell(4);
+                cell.setCellValue(level.time);
             }
         }
 
